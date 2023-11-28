@@ -1,0 +1,10 @@
+stages:
+    - npm
+
+
+Install dependecy:
+    stage: npm    
+    image:
+        name: node:18
+    script:
+        - npm install
