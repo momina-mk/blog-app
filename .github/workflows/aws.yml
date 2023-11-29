@@ -8,9 +8,9 @@ on:
 
 
 env:
-  AWS_REGION: us-east-1                 
-  ECR_REPOSITORY: blog-app          
-  CONTAINER_NAME: blog-app           
+  AWS_REGION: "us-east-1"                 
+  ECR_REPOSITORY: "blog-app"          
+  CONTAINER_NAME: "blog-app"           
                                               
   contents: read
 jobs:
