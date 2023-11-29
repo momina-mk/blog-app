@@ -10,7 +10,7 @@ terraform {
 }
 
 provider "aws" {
-  region  = "east-us-1"
+  region  = "us-east-1"
  
 }
 resource "aws_ecr_repository" "blog-app" {
