@@ -1,18 +1,17 @@
 terraform {
   required_providers {
     aws = {
-      source = "hashicorp/aws"
+      source  = "hashicorp/aws"
       version = "~> 3.27"
-     
     }
   }
-   required_version = ">=0.14.9"
+  required_version = ">= 0.14.9"
 }
 
 provider "aws" {
-  region  = "us-east-1"
- 
+  region = "us-east-1"
 }
+
 resource "aws_ecr_repository" "blog-app" {
   name                 = "blog-app"
   image_tag_mutability = "MUTABLE"
