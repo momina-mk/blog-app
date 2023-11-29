@@ -10,8 +10,8 @@ provider "aws" {
   region = "us-east-1"
 }
 
-resource "aws_ecr_repository" "blog-app" {
-  name                 = "blog-app"
+resource "aws_ecr_repository" "nodejs-app1" {
+  name                 = "nodejs-app1"
   image_tag_mutability = "MUTABLE"
 
   image_scanning_configuration {
